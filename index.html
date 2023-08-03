@@ -3,23 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="celeberate_womentech.png">
+    <link rel="stylesheet" href="style.css">
     <title>Amitzz</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: gray;
+            flex-direction: column;
+        }
+        .flex-container > div{
+            background-color: azure;
+            font-size: 30px;
+            margin: 10px;
+            flex-direction:column;
+
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+        }
+        .grid-item{
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1><b><i>About me</i></b></h1>
-           <p> Hii..I am Amitha.I am pursuing B.tech-Artificial Intelligence and Data Science department in Kumaraguru college of technology</p>
+        <div>
+        <h1 style="font-family: 'Courier New', Courier, monospace;"><b><i>About me</i></b></h1>
+           <p> Hii..I am Amitha.I am pursuing <span>B.tech-Artificial Intelligence and Data Science department</span> in Kumaraguru college of technology</p>
+           <img src="celeberate_womentech.png" alt="image" width="250" height="200">
         <hr>
         <h2><b><i>Hobbies</i></b></h2>
            <p>I like to watch cricket<br>I like singing <br> I like to play carrom</p>
         <hr>
+        </div>
+        <div>
         <h3><b><i>Favourite Subject</i></b></h3>
            <ul>
               <li>Maths</li>
               <li>Machine Learning</li>
               <li>Data Science</li>
            </ul>
-        <hr>   
+        <hr>  
+        </div> 
+        <div>
         <h4><b><i>Language Known</i></b></h4>
             <ol type="A">
                 <li>Tamil</li>
@@ -34,6 +68,15 @@
                 <li>HTML and CSS</li>
             </ol>
         <hr>
+        <div class="grid-container">
+             <div class="grid-item">Artificial Intelligence</div>
+             <div class="grid-item">Data science</div>
+        </div>
+        <br>
+        <div class="flex-container">
+            <div>HTML</div>
+            <div>CSS</div>
+        </div>
     </header>
 </body>
 </html>

@@ -39,6 +39,7 @@ while(i<a){
     console.log(i)
     i++
 }
+/* array */
 
 /* array=[10,20]
 array.forEach(element => console.log(element)); */
@@ -92,3 +93,35 @@ if(array.length > 0){
 else{
     console.log("No elements are present")
 }
+
+/* objects */
+a={
+    car:"Audi",
+    model:"A8",
+    airbags:8,
+    wheels:5,
+    color:"black"
+}
+
+console.log(a['color'])
+console.log(a.airbags)
+var some = 'model'
+console.log(a[some])
+console.log(a)
+a.car="BMW"
+console.log(a)
+a.sunroof={isPresent:"yes",shape:"rectangle"}
+console.log(a)
+console.log(a.sunroof.isPresent)
+
+for(var ele in a){
+    console.log(ele +":"+ a[ele])
+    if(typeof a[ele] == "object")
+    {
+        for (var val in a[ele]){
+            console.log(val+":" + a[ele][val])
+        }
+    }
+}
+
+

@@ -40,5 +40,55 @@ while(i<a){
     i++
 }
 
-array=[10,20]
-array.forEach(element => console.log(element));
+/* array=[10,20]
+array.forEach(element => console.log(element)); */
+
+
+const array=[10,20,"amitzz",23.0,Date()]
+console.log("before change :")
+for (var ele in array){
+    console.log(array[ele])
+}
+console.log("after change :")
+array.push("Full stack")
+
+for(var ele of array){
+    console.log(ele)
+}
+array.pop("Full stack")
+
+for(var ele of array){
+    console.log(ele)
+}
+array.pop()
+array.pop()
+array.pop()
+array.pop()
+array.pop()
+console.log("after poping all the element")
+
+if(array.length > 0){
+    console.log("elements are present")
+    
+    for(var ele of array){
+    console.log(ele)
+    }
+}
+else{
+    console.log("No elements are present")
+}
+
+
+array.push(1)
+
+
+if(array.length > 0){
+    console.log("elements are present")
+    
+    for(var ele of array){
+    console.log(ele)
+    }
+}
+else{
+    console.log("No elements are present")
+}
